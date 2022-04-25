@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Source Code</title>
+  </head>
+  <body>
+    <div
+      class="container"
+      style="display: flex; flex-direction: row; gap: 14px"
+    >
+      <!--html source code -->
+      <div class="source" style="display: flex; flex-direction: column">
+        <h4>HTML Source Code</h4>
+        <textarea id="htmlsource" cols="110" rows="50">
+<html lang="en"><head><style>
+    body {
+      background: url("img/bekgo.jpg");
+      margin-bottom: 200px;
+    }
+    h1 {
+      color: aliceblue;
+    }
+    .kirim {
+      width: 85px;
+    }
+    select {
+      width: 185px;
+    }
+  </style>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <h1 align="center">Form Pendaftaran</h1>
+    <hr>
+    <br>
+    <br>
+    <div class="regristasi">
+      <form action="/pendaftaran_page.php">
+        <!--Name-->
+        <hr>
+        <label for="name">Nama :</label><br>
+        <input type="text"><br>
+        <br>
+        <br>
+        <hr>
+        <!--Akhir Name-->
+        <!--Gender-->
+        <label for="gender">Jenis Kelamin :</label><br>
+        <select name="" id="">
+          <option value="boy">Laki-laki</option>
+          <option value="girl">Perempuan</option></select><br>
+        <br>
+        <br>
+        <hr>
+        <!--Akhir Gender-->
+        <!--Status-->
+        <label for="">Status :</label><br>
+        <br>
+        <input type="radio" value="menikah" name="status">Menikah &lrm; &lrm; &lrm; &lrm; &lrm;
+        <input type="radio" value="lajang" name="status">Lajang <br>
+        <br>
+        <br>
+        <hr>
+        <!--Akhir Status-->
+        <!--Makanan Kesukaaan-->
+        <label for="makanan_kesukaan">Makanan Kesukaan :</label><br>
+        <br>
+        <input type="checkbox" name="mie ayam" id="mie ayam">
+        <label for="mie ayam">Mie Ayam</label>
+        <input type="checkbox" name="bakso" id="bakso">
+        <label for="bakso">Bakso</label>
+        <input type="checkbox" name="ayam geprek" id="ayam geprek">
+        <label for="ayam geprek">Ayam Geprek</label> <br>
+        <br>
+        <br>
+        <hr>
+        <!--Akhir Makanan Kesukaaan-->
+        <!--Minuman Kesukaan-->
+        <label for="minuman_kesukaan">Minuman Kesukaan :</label> <br>
+        <br>
+        <input type="checkbox" name="teh" id="teh">
+        <label for="teh">Teh</label>
+        <input type="checkbox" name="kopi" id="kopi">
+        <label for="kopi">Kopi</label>
+        <input type="checkbox" name="susu" id="susu">
+        <label for="susu">Susu</label><br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <!--Akhir Minuman Kesukaan-->
+        <!--Submit-->
+        <input class="kirim" type="submit" style="background-color: rgb(4, 80, 4)" value="Kirim">
+      </form>
+    </div>
+    <!--Footer-->
+    <footer class="footer">
+      <p>Created with love by Mooja &nbsp; &nbsp; &nbsp; &nbsp;</p>
+      <p>© 2022 Mooja</p><br>
+      <div class="icon-bar">
+  <a href="#"><i class="fa fa-home"></i></a>
+  <a href="#"><i class="fa fa-search"></i></a>
+  <a href="#"><i class="fa fa-envelope"></i></a>
+  <a href="#"><i class="fa fa-globe"></i></a>
+    </div></footer>
+    <!--Akhir Footer-->
+
+</body>
+</html></textarea
+        >
+      </div>
+      <!-- html source code -->
+
+      <!-- css source code -->
+      <div class="source" style="display: flex; flex-direction: column">
+        <h4>CSS Source Code</h4>
+        <textarea id="csssource" cols="110" rows="50">
+p {
+  display: inline-block;
+}
+select {
+  width: 185px;
+}
+input {
+  width: max-content;
+}
+.regristasi {
+  border: 1px solid rgb(87, 86, 86);
+  width: 300px;
+  color: white;
+  padding: 50px;
+  background-color: black;
+  margin: auto;
+  margin-top: 60px;
+  background-color: rgba(0, 0, 0, 0.472);
+
+  border: 1px solid;
+
+  box-shadow: 10px 10px 50px #000000;
+}
+
+.kirim {
+  border-radius: 5px;
+  margin-left: 200px;
+  color: aliceblue;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.164);
+  color: rgb(211, 207, 207);
+  text-align: center;
+}
+.icon-bar {
+  width: 100%;
+  text-overflow:ellipsis;
+}
+
+.icon-bar a {
+  float:left
+  width: 20%;
+  text-align:center;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  color: lightgray;
+  font-size: 18px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+</textarea
+        >
+      </div>
+      <!-- css source code -->
+    </div>
+  </body>
+</html>

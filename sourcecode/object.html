@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Source Code</title>
+  </head>
+  <body>
+    <div
+      class="wrap-container"
+      style="display: flex; flex-direction: row; gap: 14px"
+    >
+      <!-- html source code -->
+      <div class="source" style="display: flex; flex-direction: column">
+        <h4>HTML Source Code</h4>
+        <textarea id="htmlsource" cols="80" rows="55">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js-Object</title>
+  </head>
+  <body
+    style="
+      font-family: sans-serif;
+      line-height: 30px;
+      padding: 30px;
+      background-image: url(bc.jpg);
+      color: snow;
+      font-size: 23px;
+    "
+  >
+    <h1 style="line-height: 50px">Question Number 4</h1>
+    <script src="latihan-1.js"></script>
+    <h1 style="line-height: 50px">Question Number 5</h1>
+    <img
+      src="objectJualMotor.png"
+      alt="gambar code"
+      style="background-size: 100% 100%"
+    /><br />
+    <script src="latihan-2.js"></script>
+  </body>
+</html></textarea
+        >
+      </div>
+      <!-- html source code -->
+      <div
+        class="container"
+        style="display: flex; flex-direction: column; gap: 14px"
+      >
+        <!-- js source code -->
+        <div class="source" style="display: flex; flex-direction: column">
+          <h4>JavaScript Source Code(latihan-1)</h4>
+          <textarea id="htmlsource" cols="80" rows="30">
+var mobil = {
+  merek: "Rolls-Royce Boat Tail",
+  harga: 400 + " Miliar",
+  warna: "Blue Doff",
+  gas: function () {
+    return "Mobil Melaju";
+  },
+  rem: function () {
+    return "Mobil Berhenti";
+  },
+};
+document.write("Mobil ", mobil, "<br><br>");
+document.write("Merk = ", mobil.merek, "<br>");
+document.write("Harga = ", mobil.harga, "<br>");
+document.write("Warna = ", mobil.warna, "<br>");
+document.write("Gas = ", mobil.gas(), "<br>");
+document.write("Rem = ", mobil.rem(), "<br><br><br>");
+////////
+var motor = {
+  merek: "Kawasaki Ninja H2 Carbon",
+  harga: 515 + " Juta",
+  warna: "Green Silver ",
+  gas: function () {
+    return "Motor Melaju";
+  },
+  rem: function () {
+    return "Motor Berhenti";
+  },
+};
+document.write("Motor ", motor, "<br><br>");
+document.write("Merk = ", motor.merek, "<br>");
+document.write("Harga = ", motor.harga, "<br>");
+document.write("Warna = ", motor.warna, "<br>");
+document.write("Gas = ", motor.gas(), "<br>");
+document.write("Rem = ", motor.rem(), "<br><br><br>");
+////////
+var handphone = {
+  merek: "Iphone 13 Pro Max",
+  kapasitas: 128 + " Gb",
+  warna: "Biru Sierra",
+  layar: 6.7 + " inci",
+  turnOn: function () {
+    return "Handphone Menyala";
+  },
+  turnOff: function () {
+    return "Handphone Mati";
+  },
+};
+document.write("Handphone ", handphone, "<br><br>");
+document.write("Brand  = ", handphone.merek, "<br>");
+document.write("RAM = ", handphone.kapasitas, "<br>");
+document.write("Warna = ", handphone.warna, "<br>");
+document.write("Layar = ", handphone.layar, "<br>");
+document.write("Turn On = ", handphone.turnOn(), "<br>");
+document.write("Turn Off = ", handphone.turnOff(), "<br><br><br>");
+////////
+var laptop = {
+  merek: "ASUS Zenbook Pro Duo 15 OLED (UX582) ",
+  processor: " Intel Core i9",
+  harga: 51 + " Juta",
+  turnOn: function () {
+    return "Laptop Menyala";
+  },
+  turnOff: function () {
+    return "Laptop Mati";
+  },
+};
+document.write("Laptop ", laptop, "<br><br>");
+document.write("Brand  = ", laptop.merek, "<br>");
+document.write("Processor = ", laptop.processor, "<br>");
+document.write("Harga = ", laptop.harga, "<br>");
+document.write("Turn On = ", laptop.turnOn(), "<br>");
+document.write("Turn Off = ", laptop.turnOff(), "<br><br><br>");
+/////////
+var TV = {
+  merek: "Panasonic TV LED 32 inc",
+  konsumsiDaya: 63 + " Watt",
+  layar: 1366 + " x " + 768 + " HD",
+  turnOn: function () {
+    return "TV Menyala";
+  },
+  turnOff: function () {
+    return "TV Mati";
+  },
+};
+document.write("TV LED ", TV, "<br><br>");
+document.write("Brand  = ", TV.merek, "<br>");
+document.write("Konsumsi Daya = ", TV.konsumsiDaya, "<br>");
+document.write("Layar = ", TV.layar, "<br>");
+document.write("Turn On = ", TV.turnOn(), "<br>");
+document.write("Turn Off = ", TV.turnOff(), "<br><br><br>");
+/////////</textarea
+          >
+        </div>
+        <!-- js source code -->
+        <!-- js source code -->
+        <div class="source" style="display: flex; flex-direction: column">
+          <h4>JavaScript Source Code(latihan-2)</h4>
+          <textarea id="htmlsource" cols="80" rows="20">
+var jualMotor = {
+  iklan: function () {
+    document.write(
+      `BU , Saya ${this.nama} , jual Motor ${this.merk} , tahun ${this.tahun} , Bekas`
+    );
+  },
+};
+const promosi = Object.create(jualMotor);
+
+(promosi.nama = "Boy"),
+  (promosi.merk = "Kawasaki Ninja H2 Carbon"),
+  (promosi.tahun = 2019);
+promosi.iklan();</textarea
+          >
+        </div>
+        <!-- js source code -->
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(img/bg.png);
+}
+
+/* header */
+.wrap-header {
+  background-image: url(img/back.jpeg);
+  background-size: 100% 100%;
+  width: 1900px;
+  height: 780px;
+  margin-top: -250px;
+  background-attachment: fixed;
+}
+.header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.img-header {
+  background-image: url(img/pp.png);
+  margin-top: 450px;
+  width: 175px;
+  height: 175px;
+  border-radius: 150px;
+  border: 2.8px solid snow;
+}
+.quote p {
+  font-size: 36px;
+  margin-top: 500px;
+  padding: 20px;
+  text-shadow: 1px 0px 1px;
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 0 rgb(83, 83, 83), 0px 1.5px 0 rgb(83, 83, 83),
+    -1.5px -1.5px 0 rgb(83, 83, 83), -1.5px -1.5px 0 rgb(83, 83, 83),
+    -1.5px 1.5px 0 rgb(83, 83, 83), 1.5px -1.5px 0 rgb(83, 83, 83),
+    0.7778174593px 0.7778174593px 0 #aaaaaa,
+    1.5556349186px 1.5556349186px 0 #aaaaaa,
+    2.3334523779px 2.3334523779px 0 #aaaaaa,
+    3.1112698372px 3.1112698372px 0 #aaaaaa,
+    3.8890872965px 3.8890872965px 0 #aaaaaa,
+    4.6669047558px 4.6669047558px 0 #aaaaaa,
+    5.4447222151px 5.4447222151px 0 #aaaaaa,
+    6.2225396744px 6.2225396744px 0 #aaaaaa,
+    7.0003571337px 7.0003571337px 0 #aaaaaa,
+    7.7781745931px 7.7781745931px 0 #aaaaaa;
+}
+
+span a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px;
+  margin: auto 150px;
+}
+span a:hover {
+  background-color: rgba(255, 255, 255, 0.808);
+  color: black;
+  transition: 0.5s;
+}
+/*  */
+.home-ball {
+  background-color: rgba(255, 255, 255, 0.534);
+  padding: 8px;
+  width: max-content;
+  border-radius: 30px;
+  position: fixed;
+  margin: auto 5px;
+}
+.home {
+  background-image: url(img/home.png);
+  width: 32px;
+  height: 32px;
+}
+/* clock */
+.wrap-clock {
+  margin-top: -20%;
+  position: absolute;
+}
+.clock {
+  display: flex;
+  flex-direction: column;
+}
+canvas #canvas {
+  color: white;
+}
+#txt {
+  margin-left: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+/*  */
+.sosmed {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 91%;
+  background-color: rgba(255, 255, 255, 0.24);
+  width: max-content;
+  padding: 5px;
+  gap: 5px;
+}
+.github {
+  background-image: url(img/github-logo.png);
+  width: 32px;
+  height: 32px;
+}
+.telegram {
+  background-image: url(img/telegram.png);
+  width: 32px;
+  height: 32px;
+}
+.instagram {
+  background-image: url(img/instagram\ .png);
+  width: 32px;
+  height: 32px;
+}
+.facebook {
+  background-image: url(img/facebook.png);
+  width: 32px;
+  height: 32px;
+}
+/* content */
+.wrap {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.content {
+  box-shadow: 0px 2px 10px 0px #bfbfbf;
+  margin: 10px;
+  background-color: white;
+}
+.content img {
+  padding: 10px;
+  width: 582px;
+  height: 280px;
+}
+p a {
+  padding: 5px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+p a:hover {
+  background-color: rgb(221, 221, 221);
+  color: #3446ff;
+}
+p {
+  font-size: 18px;
+  margin-top: -3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* input { */
+/* width: 200px; */
+/* outline: none; */
+/* } */
+/* input[type="text"] { */
+/* width: 200px; */
+/* height: 100px; */
+/* } */
+/* #scroll { */
+/* display: block; */
+/* border: 0.5px solid grey; */
+/* padding: 5px; */
+/* margin-top: 5px; */
+/* width: 800px; */
+/* height: 300px; */
+/* overflow: scroll; */
+/* } */
+.reactrouterfont {
+  font-size: 16px;
+}
+/* Responsive */
+
+@media only screen and (max-width: 360px) {
+  body {
+    max-width: 360px;
+  }
+
+  .wrap-header {
+    background-image: url(img/back.jpeg);
+    width: 360px;
+    height: 680px;
+    margin-top: -230px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-header {
+    background-image: url(img/pp\ -75.png);
+    margin-top: 350px;
+    width: 75px;
+    height: 75px;
+    border: 2px solid snow;
+  }
+  .quote p {
+    font-size: 22px;
+    margin-top: 0;
+    padding: 8px;
+  }
+
+  span a {
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 2px;
+    margin: auto 100px;
+    font-size: 10px;
+  }
+
+  /* homeball */
+  .home-ball {
+    background-color: rgba(255, 255, 255, 0.534);
+    padding: 2px;
+    width: max-content;
+    border-radius: 30px;
+    margin: 5px;
+  }
+  .home {
+    background-image: url(img/home\ -16.png);
+    width: 16px;
+    height: 16px;
+  }
+  /* clock */
+  .wrap-clock {
+    position: absolute;
+  }
+  .clock {
+    display: flex;
+    margin-top: -170%;
+  }
+  #canvas {
+    display: none;
+  }
+  #txt {
+    padding: 0;
+    font-size: 12px;
+  }
+  .tanggalwaktu {
+    /* margin-top: -420%; */
+    font-size: 12px;
+  }
+  /*  */
+  .sosmed {
+    margin-top: 40%;
+    margin-left: 73%;
+    padding: 3px;
+    gap: 3px;
+  }
+  .github {
+    background-image: url(img/github-logo-16.png);
+    width: 16px;
+    height: 16px;
+  }
+  .telegram {
+    background-image: url(img/telegram-16.png);
+    width: 16px;
+    height: 16px;
+  }
+  .instagram {
+    background-image: url(img/instagram\ -16.png);
+    width: 16px;
+    height: 16px;
+  }
+  .facebook {
+    background-image: url(img/facebook\ -16.png);
+    width: 16px;
+    height: 16px;
+  }
+  /* content */
+  .container {
+    max-width: 360px;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+  }
+
+  .content {
+    box-shadow: 0px 2px 10px 0px #bfbfbf;
+    margin: 4px;
+    background-color: white;
+  }
+  .content img {
+    padding: 6px;
+    width: 96%;
+    height: 100%;
+  }
+  p a {
+    padding: 3px;
+    border-radius: 20px;
+  }
+  p a:hover {
+    background-color: rgb(221, 221, 221);
+    color: white;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+footer p {
+  text-align: center;
+}
+b {
+  width: 70%;
+}
+.reactrouterfont {
+  font-size: 80%;
+}

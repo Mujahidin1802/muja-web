@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Higher Order Function Source Code</title>
+  </head>
+  <body>
+    <div
+      class="wrap-ontainer"
+      style="display: flex; flex-direction: row; gap: 14px"
+    >
+      <!-- html source code -->
+      <div class="source" style="display: flex; flex-direction: column">
+        <h4>HTML Source Code</h4>
+        <textarea name="webportfolio" id="htmlsource" cols="80" rows="55">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko&display=swap"
+      rel="stylesheet"
+    />
+    <title>Js-Array | Mujahid</title>
+  </head>
+  <body
+    style="
+      background-image: url(ho.jpeg);
+      color: white;
+      font-size: 40px;
+      font-family: 'Teko', sans-serif;
+      letter-spacing: 4px;
+    "
+  >
+    <main style="background-color: rgba(0, 0, 0, 0.438); padding: 35px">
+      <script src="latihan-1.js"></script>
+      <br /><br />
+      <script src="latihan-2.js"></script>
+    </main>
+  </body>
+</html></textarea
+        >
+      </div>
+      <!-- html source code -->
+      <div
+        class="container"
+        style="display: flex; flex-direction: column; gap: 14px"
+      >
+        <!-- js source code -->
+        <div class="source" style="display: flex; flex-direction: column">
+          <h4>JavaScript Source Code(latihan-1)</h4>
+          <textarea name="webportfolio" id="htmlsource" cols="80" rows="15">
+var reactNative = ["Upin", "Ipin", "Mail"];
+var reactJs = ["Ehsan", "Fizi", "Jarjit"];
+
+var javasrciptDivision = reactNative.concat(reactJs);
+
+document.write("JavaSrcipt Division = " + javasrciptDivision.join(" , "));</textarea
+          >
+        </div>
+        <!-- js source code -->
+        <!-- js source code -->
+        <div class="source" style="display: flex; flex-direction: column">
+          <h4>JavaScript Source Code(latihan-2)</h4>
+          <textarea name="webportfolio" id="htmlsource" cols="80" rows="35">
+var nilaiSantri = [5, 9, 6, 7, 9, 8, 10, 7, 8];
+document.write("Data Nilai Santri = " + nilaiSantri.join(" , ") + "<br><br>");
+
+// Mean
+// function hasilMean() {
+// var total = 0;
+// var mean;
+//
+// for (var i = 0; i < nilaiSantri.length; i++) {
+// total += nilaiSantri[i];
+// mean = total / nilaiSantri.length;
+// }
+// return mean;
+// }
+// document.write("Mean = " + hasilMean() + "<br><br>");
+// /////
+var totalNilai = nilaiSantri.reduce(function (a, b) {
+  return a + b;
+}, 0);
+
+document.write("Total nilai santri = ", totalNilai, " : 9 <br>");
+document.write(
+  "Mean = ",
+  (totalNilai / nilaiSantri.length).toFixed(2),
+  "<br><br>"
+);
+
+// Median
+var angkaSorted = nilaiSantri.sort(function (a, b) {
+  return a - b;
+}, 0);
+var letakMedian = (nilaiSantri.length + 1) / 2;
+
+document.write("Nilai sorted = ", angkaSorted.join(" , "), "<br>");
+document.write("Letak Median = ke - " + letakMedian + "<br>");
+document.write("Median = " + angkaSorted[5] + "<br><br>");
+// ///
+// function cariMedian() {
+// nilaiSantri.sort(function (a, b) {
+// return a - b;
+// });
+//
+// if (nilaiSantri.length % 2 == 0) {
+// x = dataNilaiSantri / 2;
+// median = x + nilaiSantri.length / 2 + 1;
+// } else {
+// median = (nilaiSantri.length + 1) / 2;
+// }
+//
+// return nilaiSantri[median];
+// }
+//
+// document.write("Median : " + cariMedian() + "<br>");
+//
+// Modus
+document.write("Nilai santri = ", angkaSorted.join(" , "), "<br>");
+document.write("Modus (trimodal) = 7 , 8 , 9 <br><br>");
+
+// ///
+// function cariModus() {
+// nilaiSantri.sort(function (a, b) {
+// return a - b;
+// });
+//
+// var modus = [],
+// count = [],
+// maxIndex = 0,
+// i,
+// number;
+//
+// for (i = 0; i < nilaiSantri.length; i += 1) {
+// number = nilaiSantri[i];
+// count[number] = (count[number] || 0) + 1;
+//
+// if (count[number] > maxIndex) {
+// maxIndex = count[number];
+// }
+// }
+//
+// for (i in count)
+// if (count.hasOwnProperty(i)) {
+// if (count[i] === maxIndex) {
+// modus.push(Number(i));
+// }
+// }
+//
+// return modus;
+// }
+//
+// document.write("Modus : " + cariModus() + "<br>");
+//
+// Simpangan Baku
+function SimpanganBaku() {
+  const n = nilaiSantri.length;
+  const mean = nilaiSantri.reduce((a, b) => a + b) / n;
+
+  return Math.sqrt(
+    nilaiSantri.map((x) => Math.pow(x - mean, 2)).reduce((a, b) => a + b) / n
+  );
+}
+
+document.write("Simpangan Baku = " + SimpanganBaku().toFixed(2));</textarea
+          >
+        </div>
+        <!-- js source code -->
+      </div>
+    </div>
+  </body>
+</html>

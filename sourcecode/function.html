@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Source Code</title>
+  </head>
+  <body>
+    <div
+      class="wrap-container"
+      style="display: flex; flex-direction: row; gap: 14px"
+    >
+      <!-- html source code -->
+      <div class="source" style="display: flex; flex-direction: column">
+        <h4>HTML Source Code</h4>
+        <textarea id="htmlsource" cols="100" rows="55">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar JS | Mujaheed</title>
+  </head>
+  <body
+    style="
+      background-image: url(doraemon.jpg_);
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-size: 24px;
+      font-family: monospace;
+    "
+  >
+    <br />
+    <h1 style="color: blue">Menghitung Luas Persegi Panjang</h1>
+    <script src="latihan-1.js"></script>
+    <br /><br />
+    <h1 style="color: blue">Menghitung Volume & Luas Permukaan Balok</h1>
+    <script src="latihan-2.js"></script>
+    <br />
+    <script src="latihan-3.js"></script>
+    <br /><br />
+    <h3 style="color: white">Thank's 😊</h3>
+    <img src="do.gif" alt="gif" />
+  </body>
+</html></textarea
+        >
+      </div>
+      <!-- html source code -->
+      <div
+        class="container"
+        style="display: flex; flex-direction: column; gap: 14px"
+      >
+        <!-- js source code -->
+        <div class="source" style="display: flex; flex-direction: column">
+          <h4>JavaScript Source Code(latihan-1)</h4>
+          <textarea id="htmlsource" cols="80" rows="25">
+function hitungLuasPersegiPanjang(a, b) {
+  return a * b;
+}
+
+var a = parseInt(
+  prompt("𝗠𝗲𝗻𝗴𝗵𝗶𝘁𝘂𝗻𝗴 𝗟𝘂𝗮𝘀 𝗣𝗲𝗿𝘀𝗲𝗴𝗶 𝗣𝗮𝗻𝗷𝗮𝗻𝗴" + "\n\nMasukan nilai panjang :")
+);
+var b = parseInt(
+  prompt("𝗠𝗲𝗻𝗴𝗵𝗶𝘁𝘂𝗻𝗴 𝗟𝘂𝗮𝘀 𝗣𝗲𝗿𝘀𝗲𝗴𝗶 𝗣𝗮𝗻𝗷𝗮𝗻𝗴" + "\n\nMasukan nilai lebar :")
+);
+var hasil = hitungLuasPersegiPanjang(a, b);
+document.write("Luas Persegi Panjang = " + hasil);</textarea
+          >
+        </div>
+        <!-- js source code -->
+        <!-- js source code -->
+        <div class="source" style="display: flex; flex-direction: column">
+          <h4>JavaScript Source Code(latihan-2</h4>
+          <textarea id="htmlsource" cols="80" rows="25">
+function hitungVolumeBalok(p, l, t) {
+  return p * l * t;
+}
+
+var p = parseInt(
+  prompt("𝗠𝗲𝗻𝗴𝗵𝗶𝘁𝘂𝗻𝗴 𝗩𝗼𝗹𝘂𝗺𝗲 𝗕𝗮𝗹𝗼𝗸" + "\n\nMasukan nilai panjang :")
+);
+var l = parseInt(
+  prompt("𝗠𝗲𝗻𝗴𝗵𝗶𝘁𝘂𝗻𝗴 𝗩𝗼𝗹𝘂𝗺𝗲 𝗕𝗮𝗹𝗼𝗸" + "\n\nMasukan nilai lebar :")
+);
+var t = parseInt(
+  prompt("𝗠𝗲𝗻𝗴𝗵𝗶𝘁𝘂𝗻𝗴 𝗩𝗼𝗹𝘂𝗺𝗲 𝗕𝗮𝗹𝗼𝗸" + "\n\nMasukan nilai tinggi :")
+);
+var hasil = hitungVolumeBalok(p, l, t);
+document.write("Volume Balok = " + hasil);
+//  /////
+document.write("<br>");
+// /////
+function hitungLuasPermukaanBalok(p, l, t) {
+  return 2 * (p * l + p * t + l * t);
+}
+
+var p = parseInt(
+  prompt("𝗠𝗲𝗻𝗴𝗵𝗶𝘁𝘂𝗻𝗴 𝗟𝘂𝗮𝘀 𝗣𝗲𝗿𝗺𝘂𝗸𝗮𝗮𝗻 𝗕𝗮𝗹𝗼𝗸" + "\n\nMasukan nilai panjang :")
+);
+var l = parseInt(
+  prompt("𝗠𝗲𝗻𝗴𝗵𝗶𝘁𝘂𝗻𝗴 𝗟𝘂𝗮𝘀 𝗣𝗲𝗿𝗺𝘂𝗸𝗮𝗮𝗻 𝗕𝗮𝗹𝗼𝗸" + "\n\nMasukan nilai lebar :")
+);
+var t = parseInt(
+  prompt("𝗠𝗲𝗻𝗴𝗵𝗶𝘁𝘂𝗻𝗴 𝗟𝘂𝗮𝘀 𝗣𝗲𝗿𝗺𝘂𝗸𝗮𝗮𝗻 𝗕𝗮𝗹𝗼𝗸" + "\n\nMasukan nilai tinggi :")
+);
+var hasil = hitungLuasPermukaanBalok(p, l, t);
+document.write("Luas Permukaan Balok = " + hasil);</textarea
+          >
+        </div>
+        <!-- js source code -->
+      </div>
+    </div>
+  </body>
+</html>

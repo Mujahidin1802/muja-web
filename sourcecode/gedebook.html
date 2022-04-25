@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gedebook Source Code</title>
+  </head>
+  <body>
+    <div
+      class="container"
+      style="display: flex; flex-direction: row; gap: 14px"
+    >
+      <!-- html source code -->
+      <div class="source" style="display: flex; flex-direction: column">
+        <h4>HTML Source Code</h4>
+        <textarea id="htmlsource" cols="110" rows="50">
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage | Mujahidin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&amp;display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="wrap-left">
+          <div class="logo">
+            <h3>Gedebook</h3>
+          </div>
+          <input type="search" placeholder="search...">
+        </div>
+        <div class="wrap-right">
+          <button class="button-login">Log In</button>
+          <!-- <button class="button-create">Create Account</button> -->
+          <input type="submit" class="button-create" value="Create Account">
+        </div>
+      </header>
+      <main>
+        <!-- Bagian Kiri -->
+        <div class="content-left">
+          <div class="box-left">
+            <input type="datetime-local" name="datetime" id="datetime">
+          </div>
+          <div class="menu-wrapper">
+            <div class="box-menu">
+              <i class="fa fa-home" style="font-size: 38px"></i>
+            </div>
+            <p class="menu-item"><a href="#">Beranda</a></p>
+          </div>
+          <div class="menu-wrapper">
+            <div class="box-menu"><i class="fa fa-comments" style="font-size: 36px"></i>
+            </div>
+            <p class="menu-item"><a href="#">Chats</a></p>
+          </div>
+          <div class="menu-wrapper">
+            <div class="box-menu"><i class="fa fa-group" style="font-size: 32px"></i></div>
+            <p class="menu-item"><a href="#">Group</a></p>
+          </div>
+          <div class="menu-wrapper">
+            <div class="box-menu"><i class="fa fa-bell" style="font-size: 36px"></i></div>
+            <p class="menu-item"><a href="#">Notification</a></p>
+          </div>
+          <div class="menu-wrapper">
+            <div class="box-menu"><i class="fa fa-shopping-bag" style="font-size: 32px"></i></div>
+            <p class="menu-item"><a href="#">Market Place</a></p>
+          </div>
+          <div class="menu-wrapper">
+            <div class="box-menu"><i class="fa fa-youtube-play" style="font-size: 36px"></i></div>
+            <p class="menu-item"><a href="#">Watch</a></p>
+          </div>
+          <div class="menu-wrapper">
+            <div class="box-menu"><i class="fa fa-cog" style="font-size: 36px"></i></div>
+            <p class="menu-item"><a href="#">Tools</a></p>
+          </div>
+        </div>
+        <!-- Akhir Bagian Kiri -->
+
+        <!-- Bagian Tengah -->
+        <div class="content-center">
+          <ul class="list-menu">
+            <li style="font-weight: bold">
+              <p><a class="nav-link" href="#home"><i class="fa fa-home" style="font-size: 36px"></i></a></p>
+            </li>
+            <li class="list">
+              <p><a class="nav-link" href="#chat"><i class="fa fa-comments" style="font-size: 24px"></i></a></p>
+            </li>
+            <li class="list">
+              <p><a class="nav-link" href="#group"><i class="fa fa-group" style="font-size: 22px"></i></a></p>
+            </li>
+            <li class="list">
+              <a></a><a class="nav-link" href="#notif"><i class="fa fa-bell" style="font-size: 23px"></i></a><p></p>
+            </li>
+            <li class="list">
+              <p><a class="nav-link" href="#market"><i class="fa fa-shopping-bag" style="font-size: 22px"></i></a></p>
+            </li>
+            <li class="list">
+              <p><a class="nav-link" href="#vid"><i class="fa fa-youtube-play" style="font-size: 23px"></i></a></p>
+            </li>
+          </ul>
+          <!-- content -->
+          <div class="content">
+            
+            <!-- content 1 -->
+            <div id="home">
+              <div class="card">
+              &nbsp; Cinematic In The Beach 
+              <video src="img/cinematic-pantai.mp4" controls="" width="100%"></video><br><br>
+              <div class="wrap-profile">
+                <div class="profile-img"></div>
+                <div class="wrap-name">
+                  <h3 class="name">Mujahidin</h3>
+                  <p class="date">10 Feb 2022</p>
+                </div>
+              </div>
+              <h1>
+                Jangan pernah mengungkit masa lalu orang lain,karena kita tidak
+                pernah tahu seberapa keras ia berjuang untuk lepas dari masa
+                lalunya.
+              </h1>
+              <div class="wrap-content">
+                <p>#hastag</p>
+                <div class="wrap-comment">
+                  <p>
+                    <i class="fa fa-heart" style="font-size: 24px; color: red"></i>&nbsp; 99+
+                  </p>
+                  <p>
+                    <i class="fa fa-comment" style="font-size: 24px"></i>&nbsp;
+                    Comments
+                  </p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="card" style="
+                margin-top: 16px;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;">
+              <!-- content 2 -->
+              <div id="chat">
+                <div class="wrap-profile">
+                <div class="card">&nbsp; Beach in Port Ghalib, Marsa Alam &nbsp; | 09 Feb 2022
+                  <div class="image1"></div>
+                  <br>
+                  <div class="profile-img"></div>
+                  <div class="wrap-name">
+                    <h3 class="name">Mujahidin</h3>
+                    <p class="date">9 Feb 2022</p>
+                  </div>
+                </div>
+                </div>
+                </div>
+              <h1>
+                Merenungi arah arah tuju itu penting agar sibuk terkantukmu
+                tidak seperti lilin yang terlahap api, meleleh mencair
+                jangan-jangan selama ini lelah payahmu hanya serupa mengukir
+                air.
+              </h1>
+              <div class="wrap-content">
+                <p>#hastag</p>
+                <div class="wrap-comment">
+                  <p>
+                    <i class="fa fa-heart" style="font-size: 24px; color: red"></i>
+                    &nbsp; 99+
+                  </p>
+                  <p>
+                    <i class="fa fa-comment" style="font-size: 24px"></i>&nbsp;
+                    Comments
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- content 3 -->
+            <div id="group"><div class="card">&nbsp; &nbsp; Fish in the clear sea
+              <div class="image2"></div><br>
+              <div class="wrap-profile">
+                <div class="profile-img"></div>
+                <div class="wrap-name">
+                  <h3 class="name">Mujahidin</h3>
+                  <p class="date">7 Feb 2022</p>
+                </div>
+              </div>
+              <h1>
+                Jangan menjelaskan tentang dirimu kepada siapapun, karena yang menyukaimu tidak butuh itu. Dan yang membencimu tidak percaya itu.
+              </h1>
+              <div class="wrap-content">
+                <p>#hastag</p>
+                <div class="wrap-comment">
+                  <p>
+                    <i class="fa fa-heart" style="font-size: 24px; color: red"></i>
+                    &nbsp; 99+
+                  </p>
+                  <p>
+                    <i class="fa fa-comment" style="font-size: 24px"></i>&nbsp;
+                    Comments
+                  </p>
+                </div>
+              </div>
+            </div></div>
+            <!-- content 4 -->
+            <div id="notif">
+             <div class="card">&nbsp; &nbsp; In The Sea
+             <div class="image3"></div><br>
+             <div class="wrap-profile">
+               <div class="profile-img"></div>
+               <div class="wrap-name">
+                 <h3 class="name">Mujahidin</h3>
+                 <p class="date">5 Feb 2022</p>
+               </div>
+             </div>
+             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse quasi illo saepe.
+             </h1>
+             <div class="wrap-content">
+               <p>#hastag</p>
+               <div class="wrap-comment">
+                 <p>
+                   <i class="fa fa-heart" style="font-size: 24px; color: red"></i>&nbsp; 99+
+                 </p>
+                 <p>
+                   <i class="fa fa-comment" style="font-size: 24px"></i>&nbsp;
+                   Comments
+                 </p>
+               </div>
+             </div>
+             </div>
+           </div>
+           <!-- content 5 -->
+           <div id="market">
+             <div class="card">&nbsp; &nbsp; View of The Ships
+             <div class="image4"></div><br>  
+             <div class="wrap-profile">
+               <div class="profile-img"></div>
+               <div class="wrap-name">
+                 <h3 class="name">Mujahidin</h3>
+                 <p class="date">4 Feb 2022</p>
+               </div>
+             </div>
+             <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, quod ex?
+             </h1>
+             <div class="wrap-content">
+               <p>#hastag</p>
+               <div class="wrap-comment">
+                 <p>
+                   <i class="fa fa-heart" style="font-size: 24px; color: red"></i>&nbsp; 99+
+                 </p>
+                 <p>
+                   <i class="fa fa-comment" style="font-size: 24px"></i>&nbsp;
+                   Comments
+                 </p>
+               </div>
+             </div>
+             </div>
+           </div>
+           <!--content 6  -->
+           <div id="vid">
+             <div class="card">&nbsp; &nbsp; The Lion Fish
+             <div class="image5"></div><br>  
+               <audio src="img/monahab.mp3" controls=""></audio><br><br>
+             <div class="wrap-profile">
+               <div class="profile-img"></div>
+               <div class="wrap-name">
+                 <h3 class="name">Mujahidin</h3>
+                 <p class="date">2 Feb 2022</p>
+               </div>
+             </div>
+             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus!
+             </h1>
+             <div class="wrap-content">
+               <p>#hastag</p>
+               <div class="wrap-comment">
+                 <p>
+                   <i class="fa fa-heart" style="font-size: 24px; color: red"></i>&nbsp; 99+
+                 </p>
+                 <p>
+                   <i class="fa fa-comment" style="font-size: 24px"></i>&nbsp;
+                   Comments
+                 </p>
+               </div>
+             </div>
+             </div>
+           </div>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- Akhir Bagian Tengah -->
+
+        <!-- Bagian Kanan -->
+        <div class="content-right">
+          <div class="box-right-top"><h3>Kamu lelah karna working melulu??<br>Santai, kita bisa kok healing dulu untuk rehat sejenak dari penatnya working. <br> Nahh, untuk menghilangkan penat bisa kita dengan liburan ke wisata-wisata alam atau mungkin yang paling sederhananya dengan cara menikmati kopi.Buat kalian yang masih bingung mau ngopi apa.Nih mimin kasih tau recomend cafe yang bisa untuk menikmati ngopi. <br><a href="https://tugas2-muja-hideen.netlify.app/">MOOJA. Cafe</a></h3></div>
+          <div class="box-right-bottom">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quis sit exercitationem incidunt sequi quo totam, quia culpa veniam, facilis numquam, doloribus ipsa quod dolorem animi consectetur odio nihil debitis. Facere repellat architecto eligendi. Tenetur praesentium dolores earum voluptate magni deleniti, ullam suscipit dignissimos dolorem, reiciendis consequuntur architecto incidunt excepturi laboriosam. Voluptate, rerum vitae ab aut maiores ipsa beatae cupiditate, eum unde dignissimos ut reiciendis? Porro deserunt perspiciatis iusto voluptatum tempora officia unde, quisquam quo vitae obcaecati nisi at aliquam ad reprehenderit odit architecto non magni neque quidem vel? Corporis!</div>
+        </div>
+        <!-- Akhir Bagian Kanan -->
+      </main>
+      <footer> 
+        <marquee behavior="scroll" direction="up" scrollamount="2" height="30px" style="text-align: center;">© 2022 Gedebook from &nbsp; &nbsp; <i class="fa fa-maxcdn"></i>&nbsp; Mooja</marquee>
+      </footer>
+    </div>
+  
+
+</body></html></textarea
+        >
+      </div>
+      <!-- html source code -->
+      <!-- css source code -->
+      <div class="source" style="display: flex; flex-direction: column">
+        <h4>CSS Source Code</h4>
+        <textarea id="csssource" cols="110" rows="50">
+/* reset padding and margin */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+  font-family: "Nunito", sans-serif;
+}
+/* reset padding and margin */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(70, 187, 233);
+  position: relative;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  /* max-width: 1280px; */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: rgb(218, 238, 246);
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+header .wrap-left {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  height: 40px;
+  width: 110px;
+  background-color: blue;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+header .logo h3 {
+  color: white;
+  font-size: 22px;
+}
+
+header input[type="search"] {
+  height: 35px;
+  width: 350px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: lightgray;
+  color: black;
+  background-image: url(img/outline_search_black_24dp.png);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  text-align: center;
+}
+
+header input:focus {
+  outline: none;
+}
+
+.wrap-right {
+  display: flex;
+  align-items: center;
+  margin-right: 20%;
+}
+
+.wrap-right .button-login {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.wrap-right .button-create {
+  border: 2px solid blue;
+  background-color: white;
+  height: 35px;
+  width: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+}
+/* Akhir Header */
+
+/* Main */
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  margin-top: 70px;
+}
+
+/* Bagian Kiri */
+
+.menu-wrapper a {
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+  border-radius: 5px;
+}
+.menu-wrapper a:hover {
+  background-color: rgba(0, 0, 0, 0.479);
+  color: white;
+}
+
+.content-left {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  margin-right: 16px;
+  margin-top: 72px;
+}
+
+.content-left .box-left {
+  height: 300px;
+  padding: 16px;
+  border-radius: 8px;
+  background-image: url(img/tree.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#datetime {
+  cursor: pointer;
+  width: 80%;
+  height: 10%;
+  margin-top: -40px;
+  border-radius: 9px;
+  text-align: center;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.box-menu {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  margin-right: 8px;
+  border-radius: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+/* Akhir Bagian Kiri */
+
+/* Bagian Tengah */
+
+.content-center {
+  flex: 3;
+  height: 100%;
+  width: 100%;
+}
+
+.content-center .list-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.content-center .list-menu li {
+  list-style: none;
+  padding-left: 80px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.content-center .list-menu .list {
+  color: rgb(46, 46, 46);
+}
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+.content .image1 {
+  border-radius: 12px;
+  width: 100%;
+  height: 500px;
+  background-image: url(img/pantai.jpg);
+  background-size: cover;
+}
+.content .image2 {
+  border-radius: 12px;
+  width: 100%;
+  height: 600px;
+  background-image: url(img/ikan.jpg);
+  background-size: cover;
+}
+.content .image3 {
+  border-radius: 12px;
+  width: 100%;
+  height: 500px;
+  background-image: url(img/kapal.jpg);
+  background-size: cover;
+}
+.content .image4 {
+  border-radius: 12px;
+  width: 100%;
+  height: 600px;
+  background-image: url(img/penyu.jpg);
+  background-size: cover;
+}
+.content .image5 {
+  border-radius: 12px;
+  width: 100%;
+  height: 700px;
+  background-image: url(img/ikansinga.jpg);
+  background-size: cover;
+}
+
+.content .card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content .card .wrap-profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.content .card .wrap-profile .profile-img {
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+  border-radius: 50px;
+}
+.card h1 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+.wrap-name {
+  margin-left: 16px;
+}
+
+.wrap-comment {
+  display: flex;
+  align-items: center;
+}
+
+.wrap-comment p {
+  margin-right: 16px;
+}
+
+/* Bagian Tengah */
+
+/* Bagian Kanan */
+.content-right {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  margin-top: 45px;
+}
+
+.content-right .box-right-top {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.883);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 16px;
+  margin-bottom: 26px;
+  box-shadow: 3px 3px 15px rgb(8, 48, 180);
+}
+.content-right .box-right-bottom {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.883);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  box-shadow: 3px 3px 15px rgb(8, 48, 180);
+}
+/* Bagian Kanan */
+.profile-img {
+  background-image: url(img/face.jpg);
+  background-size: cover;
+}
+/* Akhir Main */
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: rgb(218, 238, 246);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Akhir footer */
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+  header input[type="search"] {
+    display: none;
+  }
+
+  header .wrap-right {
+    display: none;
+  }
+
+  main .content-left,
+  .content-right {
+    display: none;
+  }
+
+  main .content-center .list-menu {
+    display: none;
+  }
+}</textarea
+        >
+      </div>
+      <!-- css source code -->
+    </div>
+  </body>
+</html>

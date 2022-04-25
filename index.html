@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mujahidin</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+  </head>
+  <body onload="startTime()">
+    <div class="wrap-header">
+      <div class="header">
+        <div class="img-header"></div>
+        <div class="quote">
+          <p>Welcome to Website</p>
+          <span
+            ><a
+              href="https://wa.me/6285925000662/?text=Assalamu'alaikum."
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact Me</a
+            ></span
+          >
+        </div>
+      </div>
+      <div class="home-ball">
+        <a href="#"><div class="home"></div></a>
+      </div>
+      <!-- clock -->
+      <div class="wrap-clock">
+        <div class="clock">
+          <!-- jam analog -->
+          <canvas id="canvas" width="120px" height="120px"></canvas>
+
+          <!-- jam digital -->
+          <div id="txt"></div>
+          <script>
+            function startTime() {
+              const today = new Date();
+              let h = today.getHours();
+              let m = today.getMinutes();
+              let s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+              setTimeout(startTime, 1000);
+            }
+
+            function checkTime(i) {
+              if (i < 10) {
+                i = "0" + i;
+              } // add zero in front of numbers < 10
+              return i;
+            }
+          </script>
+          <!--  -->
+          <span class="tanggalwaktu" style="color: white; margin-left: 4px">
+            <span id="tanggalwaktu"></span>
+          </span>
+        </div>
+      </div>
+      <!-- sosmed -->
+      <div class="sosmed">
+        <a
+          href="https://github.com/Mujahidin1802"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="github"></div>
+        </a>
+        <a
+          href="https:////t.me/muja_18"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="telegram"></div>
+        </a>
+        <a
+          href="https://www.instagram.com/mujahidin1802/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="instagram"></div>
+        </a>
+        <a
+          href="https://www.facebook.com/mujahidin.hasballah"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="facebook"></div>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <!-- row 1 -->
+        <div class="wrap">
+          <div class="content">
+            <img src="img/tugas1.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugas1-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/formpendaftaran.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>&nbsp; Form Pendaftaran</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/tugas2.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugas2-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/moojacafe.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>&nbsp; Mooja Cafe</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/tugas3.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugas3-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/gedebook.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Gedebook | Landing Page</b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row 2 -->
+        <div class="wrap">
+          <div class="content">
+            <img src="img/myweb.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://Mujahidin1802.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/webportfolio.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Web Portfolio</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/tugaslogic.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugaslogic-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/tugaslogic.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Logic | Looping</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/tugas5.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugas5-sp13-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/tugaslogic-ii.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Logic | Looping</b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row 3 -->
+        <div class="wrap">
+          <div class="content">
+            <img src="img/tugas6.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugas6-sp21-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/function.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Function</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/tugas7.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugas7arraysp22-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/array.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b> Array</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/tugas8.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugas8-objectsp23-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/object.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Object</b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row 4 -->
+        <div class="wrap">
+          <div class="content">
+            <img src="img/tugas9.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugas9-hof-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/hof.html" target="_blank">view ＜/＞</a>
+                <b>Higher Order Function - Closure</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/tugas10.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugas10-counter-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/counter.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Counter</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/tugaslogic2n3.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://tugaslogic2n3-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/logic2n3.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Logic</b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row 5 -->
+        <div class="wrap">
+          <div class="content">
+            <img src="img/suwitgame.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://suwitgame.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/suwitgame.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Suwit Game</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/gamerintangan.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://gamerintangan.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/gamerintangan.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Game Rintangan</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/tikustanah.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://gamepukultikus.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/gamepukultikus.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Game Pukul Tikus Tanah</b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row 6 -->
+        <div class="wrap">
+          <div class="content">
+            <img src="img/calculator.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://calculator-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/calculator.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Calculator</b>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <img src="img/ujianlogic.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://ujianlogic-muja-hideen.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="../sourcecode/ujianlogic.html" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b>Ujian Logic</b>
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <img src="img/myapp.png" alt="" />
+            <div class="info" style="display: flex; flex-direction: row">
+              <p>
+                <a
+                  href="https://myapp-mujahed.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >visit site</a
+                >
+              </p>
+              <p>
+                <a href="https://github.com/Mujahidin1802/myapp" target="_blank"
+                  >view ＜/＞</a
+                >
+                <b class="reactrouterfont"
+                  >React Router Dom with single pages aplication</b
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Copyright © 2022 Mujahidin</p>
+      </footer>
+    </div>
+    <script src="clock.js"></script>
+  </body>
+</html>
